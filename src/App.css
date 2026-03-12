@@ -1,0 +1,156 @@
+/* ===============================
+   GLOBAL STYLES
+=================================*/
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #eef2f9;
+}
+
+
+/* ===============================
+   LOGIN PAGE
+=================================*/
+
+.auth-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.auth-card {
+  width: 420px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  text-align: center;
+}
+
+.auth-card input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0 18px;
+  border-radius: 8px;
+  border: 1px solid #ccd2e3;
+  font-size: 14px;
+}
+
+.primary-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(90deg, #3f5efb, #4f46e5);
+  color: #ffffff;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.primary-btn:hover {
+  opacity: 0.9;
+}
+
+
+/* ===============================
+   QUIZ PAGE
+=================================*/
+
+.quiz-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.quiz-card {
+  width: 750px;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 15px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.quiz-title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+
+/* ===============================
+   QUESTION SECTION
+=================================*/
+
+.question-box {
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.question-text {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+
+/* ===============================
+   OPTIONS (FIXED ALIGNMENT)
+=================================*/
+/* FIX QUIZ OPTION ALIGNMENT */
+
+.options-box {
+  margin-top: 10px;
+}
+
+.option-row {
+  display: flex;
+  align-items: center; 
+  justify-content: flex-start;  
+  gap: 12px;  
+  margin-bottom: 10px;  
+  font-size: 16px;
+  cursor: pointer;
+  width: fit-content;  
+}
+
+.option-row input {
+  margin: 0;  /* No extra margins */
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;  /* Radio size fixed */
+}
+
+.option-row span {
+  flex: 1;  /* Text takes remaining space, ensuring it stays aligned with radio */
+}
+
+
+
+/* ===============================
+   SUBMIT BUTTON
+=================================*/
+
+.submit-test-btn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 25px;
+  background: linear-gradient(90deg, #3f5efb, #4f46e5);
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+
+.submit-test-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(63, 94, 251, 0.3);
+}
+
+
